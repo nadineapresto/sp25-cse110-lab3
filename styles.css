@@ -1,0 +1,206 @@
+/* Imported fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --main-color: color(display-p3 0 0 100%);
+    --alt-color: color-mix(in srgb, rgb(139, 144, 172) 70%, rgb(7, 46, 58));
+    --accent-color: var(--main-color, #49454e);
+}
+
+body {
+    font-family: 'Nunito', sans-serif; /* Font family using Google Fonts*/
+    color: #222;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    padding: 1rem;
+}
+
+header, footer {
+    background-color: var(--alt-color);
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 12px;
+    color:aliceblue;
+}
+
+footer {
+    position: relative;
+}
+
+h1, h2 {
+    color: hsl(208, 100%, 97%);
+    background-color: rgb(54, 73, 100);
+    border-radius: 12px;
+    text-align: center;
+    font-family: 'Lobster', cursive; /* Font family using Google Fonts*/
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 1vh 2vw;
+    height: 100px;
+    width: 80ch;
+    max-width: 100%;
+    min-width: 300px;
+}
+
+* {
+    margin: 5px;
+    padding: 0.5px;
+    box-sizing: border-box;
+}
+
+.overview {
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #2d302d;
+    border-radius: 12px;
+    position: sticky;
+    top: 0;
+}
+
+section.overview {
+    border: 2px solid var(--main-color);
+}
+
+#Webpage_Information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0rem;
+    border-radius: 12px;
+    background-color: #2d302d;
+}
+
+input[type="radio"] {
+    accent-color: crimson;
+}
+
+input[type="checkbox"] {
+    accent-color: crimson;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #222;
+    text-decoration: overline;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: aliceblue;
+}
+
+section > h2 {
+    margin-bottom: 0.7em;
+}
+
+ul ~ div {
+    background-color: #8c8ca3;
+}
+
+h3 + ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+}
+
+form:has(textarea) {
+    background-color: #ddd8c5;
+    padding: 2rem;
+    border-radius: 6%;
+}
+
+main {
+    section {
+        margin-bottom: 2rem;
+    }
+
+    ol {
+        padding-left: 2rem;
+    }
+}
+
+div {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1rem;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #776666;
+    border-radius: 8px;
+}
+
+section {
+    margin: 1rem 0 1rem 0;
+    padding: 1rem 2rem;
+    border: 1px solid #ddd;
+}
+
+img {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.hidden_message {
+    display: none;
+}
+
+.inline_sample {
+    display: inline;
+    font-weight: bold;
+}
+
+audio, video {
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+/* Briefly changes email link font color when clicked */
+a:active {
+    color: red;
+}
+
+.attendance-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1rem;
+    align-items: start;
+    margin-top: 1rem;
+}
+
+.attendance-grid > span {
+    font-weight: bold;
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
