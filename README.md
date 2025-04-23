@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-[Published Site for Lab 2](https://nadineapresto.github.io/Lab2_Starter/)
+# Lab 3
+[Published Site for Lab 3](https://nadineapresto.github.io/sp25-cse110-lab3/)
